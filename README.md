@@ -65,6 +65,6 @@ APPEND TO ARRAY($attachments;$attachment)
   //curlのエラーコード
 $err:=Sendmail ($hostName;$msgFrom;$msgTo;$subject;$message;$sessionParam;$port;$userName;$password;$encoding;->$attachments)
 ```
-
+![](https://github.com/miyako/4d-component-sendmail/blob/master/images/screenshot.png)
 
 
