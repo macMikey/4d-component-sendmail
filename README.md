@@ -7,7 +7,7 @@ This is a [libcurl](http://curl.haxx.se) based 4D component (v14+) that allows y
 
 Consider it a [SMTP_QuickSend](http://doc.4d.com/4Dv15/4D-Internet-Commands/15/SMTP-QuickSend.301-2397900.ja.html) replacement.
 
-**Why not Internet Commands?**
+###Why not Internet Commands?
 
 There is a bug in the plugin (or, perhaps it is standard behaviour) where some characters in an ISO-2022-JP encoded emails using the CP932 (Windows-31J) character set (a.k.a. JIS X 0208 of 1990) are lost in transmission. It means that __you can't reliably send messages to dumbphones that do not support Unicode__ (and there are many of them, especially in the business scene). In addition, you can't send attachments with ```SMTP_QuickSend```.
 
@@ -16,6 +16,10 @@ This component does its own MIME encoding using regular string commands.
 It also accepts multiple attachments specified with ```ARRAY OBJECT```.
 
 It also exposes a set of low level MIME APIs, that take ```C_OBJECT``` as a reference.
+
+###How works
+
+The component uses an [external database](http://doc.4d.com/4Dv15/4D/15/CREATE-DATABASE.300-2288130.en.html), which stores the extended JIS to Unicode character map. Summary of this map can be found [here](https://github.com/miyako/4d-plugin-iso-2022-jp).
 
 Examples
 ---
