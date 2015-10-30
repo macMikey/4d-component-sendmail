@@ -5,7 +5,7 @@ About
 ---
 This is a [libcurl](http://curl.haxx.se) based 4D component (v14+) that allows you to send email in one line.
 
-Consider it a [SMTP_QuickSend](http://doc.4d.com/4Dv15/4D-Internet-Commands/15/SMTP-QuickSend.301-2397900.ja.html) replacement.
+Consider it an [SMTP_QuickSend](http://doc.4d.com/4Dv15/4D-Internet-Commands/15/SMTP-QuickSend.301-2397900.ja.html) replacement.
 
 Note
 ---
