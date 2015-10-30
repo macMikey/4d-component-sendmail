@@ -22,7 +22,7 @@ It also accepts multiple attachments specified with ```ARRAY OBJECT```.
 
 It also exposes a set of low level MIME APIs, that take ```C_OBJECT``` as a reference.
 
-###How works
+###How it works
 
 The component uses an [external database](http://doc.4d.com/4Dv15/4D/15/CREATE-DATABASE.300-2288130.en.html), which stores the extended JIS to Unicode character map. Summary of this map can be found [here](https://github.com/miyako/4d-plugin-iso-2022-jp).
 
