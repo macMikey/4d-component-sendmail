@@ -7,6 +7,11 @@ This is a [libcurl](http://curl.haxx.se) based 4D component (v14+) that allows y
 
 Consider it a [SMTP_QuickSend](http://doc.4d.com/4Dv15/4D-Internet-Commands/15/SMTP-QuickSend.301-2397900.ja.html) replacement.
 
+Note
+---
+For better performance, you could consider replasing the ```LAUNCH EXTERNAL PROCESS``` code with a [plugin](https://github.com/miyako/4d-plugin-curl) call. 
+
+
 ###Why not Internet Commands?
 
 There is a bug in the plugin (or, perhaps it is standard behaviour) where some characters in an ISO-2022-JP encoded emails using the CP932 (Windows-31J) character set (a.k.a. JIS X 0208 of 1990) are lost in transmission. It means that __you can't reliably send messages to dumbphones that do not support Unicode__ (and there are many of them, especially in the business scene). In addition, you can't send attachments with ```SMTP_QuickSend```.
