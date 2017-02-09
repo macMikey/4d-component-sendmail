@@ -69,7 +69,7 @@ ARRAY OBJECT($attachments;0)
 C_OBJECT($attachment)
 OB SET($attachment;"name";"添付ファイル.png")  //ファイル名は拡張文字を使用しないほうが無難でしょう
 OB SET($attachment;"type";"image/png")
-OB SET($attachment;"data";"4D.png")  //リソースパス, 絶対パス, またはbas64データ
+OB SET($attachment;"data";"4D.png")  //リソースパス, 絶対パス, またはbase64データ
 APPEND TO ARRAY($attachments;$attachment)
   //curlのエラーコード
 $err:=Sendmail ($hostName;$msgFrom;$msgTo;$subject;$message;$sessionParam;$port;$userName;$password;$encoding;->$attachments)
